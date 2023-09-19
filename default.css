@@ -226,20 +226,7 @@
     padding: 0 !important;
     font-size: 1.3em;
   }
-  
-  .layout-mobile .itemMiscInfo,
-  .layout-mobile .itemName,
-  .layout-mobile .mainDetailButtons,
-  .layout-mobile .parentName {
-    align-items: center;
-    justify-content: flex-start;
-    text-align: left;
-  }
-  
-  .layout-mobile .nameContainer {
-    font-size: 6.5vw;
-  }
-  
+   
   #itemDetailPage .detailVerticalSection:last-child {
     margin-bottom: 10vh;
   }
@@ -248,11 +235,6 @@
     margin-top: 0 !important;
   }
   
-  .layout-mobile #itemDetailPage .detailVerticalSection {
-    background: transparent;
-    width: 100%;
-    padding: 0;
-  }
   
   .itemName.parentNameLast {
     margin: 0;
@@ -264,46 +246,10 @@
   }
   
   .layout .button-flat:focus,
-  .layout-mobile .button-flat:hover {
-    color: #cdcdcd !important;
-  }
   
   .button-flat:focus,
   .button-flat:hover {
     color: var(--accent);
-  }
-  
-  @media (orientation: landscape) {
-    .layout-mobile
-      .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-      flex-flow: row;
-      width: 100% !important;
-    }
-    .layout-mobile .mainDetailButtons {
-      margin: 0 5vh;
-      width: 50vw !important;
-      flex-shrink: 1;
-    }
-    .layout-mobile .infoWrapper.infoText {
-      margin: 0 5vh !important;
-      font-size: 5vh !important;
-      max-width: 50%;
-    }
-    .layout-mobile .nameContainer {
-      font-size: 6.5vh;
-    }
-    .layout-mobile .primaryImageWrapper > img {
-      -webkit-mask-image: linear-gradient(
-        0deg,
-        transparent 0%,
-        black 90%
-      ) !important;
-      mask-image: linear-gradient(0deg, transparent 0%, black 90%) !important;
-    }
-  }
-  
-  .layout-mobile .itemName.originalTitle {
-    display: none !important;
   }
   
   .layout-tv .backdropContainer {
@@ -372,9 +318,7 @@
     overflow: hidden;
   }
   
-  .layout-mobile .detailPageSecondaryContainer {
-    margin: 0;
-  }
+
   
   .detailPageWrapperContainer {
     border-spacing: 0;
@@ -382,170 +326,15 @@
     margin: 0 5vw;
   }
   
-  .layout-mobile .detailPageWrapperContainer {
-    margin: 0 !important;
-    z-index: 0;
-  }
-  
-  .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
-    padding-top:0em;
-  }
-  
-  .layout-mobile .adminDrawerLogo {
-    border-bottom: none;
-  }
-  .layout-mobile .itemBackdrop {
-    margin-top: 4rem;
-  }
-  
-  .layout-mobile .detailImageContainer .card {
-    position: absolute !important;
-  }
 
-  .layout-mobile .primaryImageWrapper {
-    flex: 0 0 auto;
-  }
   
-  .layout-mobile .mainDetailButtons {
-    z-index: 1;
-    margin: 0 5vw;
-    flex-flow: row;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    grid-gap: 10px;
-    flex-wrap: wrap;
-    padding-bottom: 5vh;
-  }
-  
-  .layout-mobile .infoText {
-    position: static;
-    flex: 0 0 auto;
-    margin: 0 5vw;
-    font-size: 5vw;
-    width: calc(100vw - 10vw);
-  }
-  
-  .layout-mobile #itemDetailPage .btnPlay,
-  .layout-mobile #itemDetailPage .btnResume {
-    width: 100% !important;
-    flex-shrink: 0;
-    background: var(--accent) !important;
-    text-shadow: none;
-    flex-flow: row;
-    font-size: 150%;
-    justify-content: flex-start;
-    grid-gap: 5% !important;
-    padding: 10px !important;
-  }
-  
-  .layout-mobile #itemDetailPage .btnPlay::after {
-    content: "Play";
-  }
-  
-  .layout-mobile #itemDetailPage .btnResume::after {
-    content: "Resume";
-  }
-  
-  .layout-mobile #itemDetailPage .btnDownload::after {
-    content: "Download";
-  }
-  
-  .layout-mobile #itemDetailPage .btnPlayTrailer::after {
-    content: "Trailer";
-  }
-  
-  .layout-mobile #itemDetailPage .btnInstantMix::after {
-    content: "Mix";
-  }
-  
-  .layout-mobile #itemDetailPage .btnShuffle::after {
-    content: "Shuffle";
-  }
-  
-  .layout-mobile #itemDetailPage .btnCancelSeriesTimer::after {
-    content: "Cancle Series";
-  }
-  
-  .layout-mobile #itemDetailPage .btnCancelTimer::after {
-    content: "Stop Recording";
-  }
-  
-  .layout-mobile #itemDetailPage .btnPlaystate::after {
-    content: "Watched";
-  }
-  
-  .layout-mobile #itemDetailPage .btnUserRating::after {
-    content: "Favourite";
-  }
-  
-  .layout-mobile #itemDetailPage .btnSplitVersions::after {
-    content: "Split";
-  }
-  
-  .layout-mobile #itemDetailPage .btnMoreCommands::after {
-    content: "More";
-  }
-  
-  .layout-mobile #itemDetailPage .detailButton {
-    width: calc(50% - 5px);
-    background: #101010;
-    justify-content: flex-start;
-    flex-flow: revert;
-    grid-gap: 6px;
-  }
-  
-  .layout-mobile .primaryImageWrapper > img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    -webkit-filter: brightness(65%);
-    filter: brightness(65%);
-    z-index: -1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    min-width: 100vw;
-    min-height: 100vh;
-    -webkit-mask-image: linear-gradient(0deg, transparent 15%, black 90%);
-    mask-image: linear-gradient(0deg, transparent 15%, black 90%);
-  }
+
   
   .primaryImageWrapper::before {
     content: "";
     display: none;
   }
   
-  .layout-mobile
-    .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    font-size: 120%;
-    justify-content: flex-start;
-    align-content: flex-end;
-    margin-top: 0 !important;
-    height: 100vh !important;
-    z-index: 1;
-  }
-  
-  .layout-mobile .detailPageWrapperContainer > * {
-    z-index: 1;
-  }
-  
-  @media (max-width: 575px) and (min-width: 695px) {
-    .layout-mobile .nameContainer {
-      font-size: 1em;
-    }
-  }
-  
-  @media (min-width: 695px) {
-    .layout-mobile .nameContainer {
-      font-size: 2em;
-    }
-    .layout-mobile .infoWrapper.infoText {
-      margin: 0 5vh !important;
-      font-size: 2vh !important;
-      max-width: 50%;
-    }
-  }
   
   .cardText > .textActionButton {
     width: 100%;
@@ -1004,25 +793,6 @@
     z-index: -1;
   }
   
-  .layout-mobile .emby-scroller {
-    padding: 0 !important;
-    overflow: auto !important;
-  }
-  
-  .layout-mobile .innerCardFooter {
-    width: 70%;
-    margin: 0 3%;
-  }
-  
-  .layout-mobile .cardOverlayButton {
-    color: white !important;
-    border: 2px solid var(--accent);
-    margin: 0 2% 2% 0;
-  }
-  
-  .layout-mobile .cardText {
-    opacity: 1;
-  }
   
   .cardBox {
     background: transparent !important;
@@ -1133,15 +903,6 @@
     transform: scale(1) !important;
   }
   
-  .layout-mobile .card:hover {
-    transform: none !important;
-    box-shadow: none;
-    background: none !important;
-  }
-  
-  .layout-mobile .card:hover .cardScalable {
-    border-radius: var(--rounding) !important;
-  }
   
   .card:first-child {
     transform-origin: left !important;
@@ -1517,39 +1278,6 @@
     display: none;
   }
   
-  .layout-mobile .detailPageContent {
-    padding: 0 !important;
-    background: rgb(20, 20, 20);
-  }
-  
-  .layout-mobile #itemDetailPage .sectionTitle {
-    padding-left: 5%;
-  }
-  
-  .layout-mobile .detailPagePrimaryContent {
-    padding: 0 5% !important;
-    width: calc(100vw - 10%) !important;
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
-    height: fit-content !important;
-    min-height: -webkit-fit-content !important;
-    min-height: -moz-fit-content !important;
-    min-height: fit-content !important;
-  }
-  .layout-mobile #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-    position: relative;
-    top: 0;
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
-    background: transparent;
-    font-size: 20px;
-    max-width: 95%;
-    margin-top: 10vh;
-    padding: 0 !important;
-    height: 20vh;
-    font-size: 135%;
-  }
   .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,
   .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
     position: relative;
@@ -1638,9 +1366,7 @@
     opacity: 1 !important;
   }
   
-  .layout-mobile .card[data-type="Actor"] .cardText-first {
-    color: white !important;
-  }
+
   
   .card[data-type="Actor"] .cardOverlayButton-br {
     position: absolute;
@@ -1689,11 +1415,7 @@
     transition: transform 0.2s, background 0.2s, border-color 0.2s;
   }
   
-  .layout-mobile .listItem {
-    flex-wrap: wrap !important;
-    padding: 0 !important;
-    margin: 0;
-  }
+
   
   /* Adjust both "size-adjust" and "size" to modify size */
   
@@ -2035,11 +1757,7 @@
     height: 55px;
   }
   
-  .layout-mobile #itemDetailPage .vertical-list {
-    grid-template-columns: 100%;
-    width: 90vw;
-    margin: 0 auto !important;
-  }
+
   
   .listItemIndicators {
     top: 0;
@@ -2065,17 +1783,6 @@
     height: fit-content;
   }
   
-  .layout-mobile .listItem-bottomoverview {
-    padding: 0 10px;
-  }
-  
-  .layout-mobile .itemsContainer {
-    padding: 0 10px;
-  }
-  
-  .layout-mobile .itemsContainer > *:last-child {
-    padding-right: 10px !important;
-  }
   
   .listItemBody.itemAction {
     padding: 0 5px;
@@ -2099,9 +1806,7 @@
     transition: all 0.2s;
   }
   
-  .layout-mobile .listItemImageButton.itemAction.paper-icon-button-light {
-    opacity: 100% !important;
-  }
+
   
   .layout-tv #itemDetailPage .vertical-list {
     grid-template-columns: 1fr;
