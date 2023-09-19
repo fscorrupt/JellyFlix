@@ -387,14 +387,10 @@
     z-index: 0;
   }
   
-  /*Mobile tweaks*/
-  .layout-mobile .detailPagePrimaryContainer {
-    background: transparent;
-  }
   .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
     padding-top:0em;
   }
-
+  
   .layout-mobile .adminDrawerLogo {
     border-bottom: none;
   }
@@ -428,6 +424,75 @@
     margin: 0 5vw;
     font-size: 5vw;
     width: calc(100vw - 10vw);
+  }
+  
+  .layout-mobile #itemDetailPage .btnPlay,
+  .layout-mobile #itemDetailPage .btnResume {
+    width: 100% !important;
+    flex-shrink: 0;
+    background: var(--accent) !important;
+    text-shadow: none;
+    flex-flow: row;
+    font-size: 150%;
+    justify-content: flex-start;
+    grid-gap: 5% !important;
+    padding: 10px !important;
+  }
+  
+  .layout-mobile #itemDetailPage .btnPlay::after {
+    content: "Play";
+  }
+  
+  .layout-mobile #itemDetailPage .btnResume::after {
+    content: "Resume";
+  }
+  
+  .layout-mobile #itemDetailPage .btnDownload::after {
+    content: "Download";
+  }
+  
+  .layout-mobile #itemDetailPage .btnPlayTrailer::after {
+    content: "Trailer";
+  }
+  
+  .layout-mobile #itemDetailPage .btnInstantMix::after {
+    content: "Mix";
+  }
+  
+  .layout-mobile #itemDetailPage .btnShuffle::after {
+    content: "Shuffle";
+  }
+  
+  .layout-mobile #itemDetailPage .btnCancelSeriesTimer::after {
+    content: "Cancle Series";
+  }
+  
+  .layout-mobile #itemDetailPage .btnCancelTimer::after {
+    content: "Stop Recording";
+  }
+  
+  .layout-mobile #itemDetailPage .btnPlaystate::after {
+    content: "Watched";
+  }
+  
+  .layout-mobile #itemDetailPage .btnUserRating::after {
+    content: "Favourite";
+  }
+  
+  .layout-mobile #itemDetailPage .btnSplitVersions::after {
+    content: "Split";
+  }
+  
+  .layout-mobile #itemDetailPage .btnMoreCommands::after {
+    content: "More";
+  }
+  
+  .layout-mobile #itemDetailPage .detailButton {
+    width: calc(50% - 5px);
+    background: #101010;
+    justify-content: flex-start;
+    flex-flow: revert;
+    grid-gap: 6px;
   }
   
   .layout-mobile .primaryImageWrapper > img {
@@ -1471,7 +1536,20 @@
     min-height: -moz-fit-content !important;
     min-height: fit-content !important;
   }
-  
+  .layout-mobile #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
+    position: relative;
+    top: 0;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    background: transparent;
+    font-size: 20px;
+    max-width: 95%;
+    margin-top: 10vh;
+    padding: 0 !important;
+    height: 20vh;
+    font-size: 135%;
+  }
   .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,
   .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
     position: relative;
