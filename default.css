@@ -387,14 +387,25 @@
     z-index: 0;
   }
   
+  /*Mobile tweaks*/
   .layout-mobile .detailPagePrimaryContainer {
-    z-index: -1;
-    background: transparent !important;
-    height: 100vh !important;
-    width: 100vw !important;
-    padding: 0 !important;
+    background: transparent;
+  }
+  .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+    padding-top:0em;
   }
   
+  .layout-mobile .adminDrawerLogo {
+    border-bottom: none;
+  }
+  .layout-mobile .itemBackdrop {
+    margin-top: 4rem;
+  }
+  
+  .layout-mobile .detailImageContainer .card {
+    position: absolute !important;
+  }
+
   .layout-mobile .primaryImageWrapper {
     flex: 0 0 auto;
   }
